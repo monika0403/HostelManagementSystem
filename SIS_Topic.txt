@@ -1,0 +1,87 @@
+************************************ 
+SIS: Surendra IT Solution
+Author: Surendra Kumar  Sao
+S/W Architech & Corporate s/w Trainer
+Exp. +9Yr in Sw Development.
++30 projects exp. from scratch.
+Java Certified :  SCJP(98%)  & SCWCD(98%)
+MCA from NIT Raipur
+Email : sur.nit.mca@gmail.com
+phone 9009442844
+Raipur (C.G) India
+
+*************************************
+DATE : 
+
+Thu 06/15/2017 
+
+init parameter
+how to configure init param
+
+
+<servlet>
+
+  <init-param>
+      <param-name>name2<param-name>
+      <param-value>value<param-value>
+  </init-param>
+
+  
+  
+  <init-param>
+      <param-name>name2<param-name>
+      <param-value>value<param-value>
+  </init-param>
+
+
+</servlet>
+
+
+how to get ServletConfig
+
+
+ServletConfig  conf =getServletConfig();
+
+how to get init parameter
+
+conf.getInitParameter("param_name")
+
+
+
+
+-----------------------
+
+context parameter??
+where web.xml
+
+ <context-param>
+   <param-name>name</param-name>
+   <param-value>value</param-value>
+</context-param>
+
+
+how to get servlet context object
+
+ServletContext context  = getServletContext();
+how to get context  parameter??
+
+ context.getInitParameter("cntx_param_name")
+
+ServletContext {
+String getInitParameter(java.lang.String);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

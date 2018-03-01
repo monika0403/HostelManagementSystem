@@ -1,0 +1,97 @@
+<web-app>
+     <welcome-file-list>
+     <welcome-file>sishome.html</welcome-file>
+     </welcome-file-list>
+  
+  
+  <context-param>
+       <param-name>project_name</param-name>
+	    <param-value>Making Engineer</param-value>
+  </context-param>
+  
+
+  <context-param>
+       <param-name>db_url</param-name>
+	    <param-value>jdbc:oracle:thin:@localhost:1521:XE</param-value>
+  </context-param>
+
+  <context-param>
+       <param-name>driver_class_name</param-name>
+	    <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </context-param>
+
+  
+  
+  <servlet>   
+	  <servlet-name>abc</servlet-name>   
+	  <servlet-class>MyServlet1</servlet-class>   
+	   
+	   <init-param>
+	      <param-name>topic1</param-name>
+	      <param-value>oops</param-value>
+	   </init-param>
+	    
+	   <init-param>
+	      <param-name>topic2</param-name>
+	      <param-value>Jdbc</param-value>
+	   </init-param>
+		
+	  
+  </servlet>   
+  
+  <servlet-mapping>   
+	  <servlet-name>abc</servlet-name>   
+	  <url-pattern>/url1</url-pattern>
+  </servlet-mapping>   
+  
+<servlet>   
+	  <servlet-name>xyz</servlet-name>   
+	  <servlet-class>MyServlet2</servlet-class>   
+	  
+	  <init-param>
+	      <param-name>mouse</param-name>
+	      <param-value>500</param-value>
+	   </init-param>
+	  
+	  
+	  <init-param>
+	      <param-name>keyboard</param-name>
+	      <param-value>700</param-value>
+	   </init-param>
+	  
+	  
+  </servlet>   
+  
+  <servlet-mapping>   
+	  <servlet-name>xyz</servlet-name>   
+	  <url-pattern>/url2</url-pattern>
+  </servlet-mapping>   
+  
+
+  
+  
+  
+  
+<servlet>   
+	  <servlet-name>s3</servlet-name>   
+	  <servlet-class>MyServlet3</servlet-class>   
+ </servlet>   
+  
+  <servlet-mapping>   
+	  <servlet-name>s3</servlet-name>   
+	  <url-pattern>/url3</url-pattern>
+  </servlet-mapping>  
+  
+  
+  
+<servlet>   
+	  <servlet-name>s4</servlet-name>   
+	  <servlet-class>MyServlet4</servlet-class>   
+ </servlet>   
+  
+  <servlet-mapping>   
+	  <servlet-name>s4</servlet-name>   
+	  <url-pattern>/url4</url-pattern>
+  </servlet-mapping>  
+  
+</web-app>
